@@ -8,14 +8,14 @@ $(document).bind('deviceready', function(){
                 type: 'POST',
                 data: postData+'&lid='+landmarkID,
                 //change the url for your project
-                url: 'http://your-domain.com/comments/save.php',
+                url: 'http://teasolutions.com.br/save.php',
                 success: function(data){
                     console.log(data);
-                    alert('Your comment was successfully added');
+                    alert('Mensagem enviada.');
                 },
                 error: function(){
                     console.log(data);
-                    alert('There was an error adding your comment');
+                    alert('Ocorreu um erro.');
                 }
             });
             
