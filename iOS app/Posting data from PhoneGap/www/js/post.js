@@ -1,13 +1,11 @@
-window.onload = deviceready();
-$(document).bind('deviceready', function(){
+
     $(function(){
         $('form').submit(function(){
-            var landmarkID = $(this).parent().attr('data-landmark-id');
             var postData = $(this).serialize();
             
             $.ajax({
                 type: 'POST',
-                data: postData+'&lid='+landmarkID,
+                data: postData,
                 //change the url for your project
                 url: 'http://teasolutions.com.br/save.php',
                 success: function(data){
@@ -22,5 +20,4 @@ $(document).bind('deviceready', function(){
             
             return false;
         });
-    });
-});
+    
