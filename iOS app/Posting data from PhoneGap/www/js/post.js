@@ -1,3 +1,4 @@
+window.onload = deviceready();
 $(document).bind('deviceready', function(){
     $(function(){
         $('form').submit(function(){
