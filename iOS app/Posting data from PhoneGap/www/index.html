@@ -25,21 +25,15 @@
 </head>
 <body onload="onBodyLoad()">
 
-<div id="landmark-1" data-landmark-id="1">
-	<form>
-		<label for="email">
-			<b>Email</b>
-			<input type="email" id="email" name="email">
-		</label>
-
-		<label for="comment">
-			<b>Comment</b>
-			<textarea id="comment" name="comment" cols="30" rows="10"></textarea>
-		</label>
-		
-		<input type="submit" value="Save">
-	</form>
-</div>
+	<section id="contact">
+		<div class="container" id="landmark-1" data-landmark-id="1">
+			<form name="htmlform" method="post" action="toyousender.php">
+				<input  type="email" name="email" placeholder="EMAIL" required>
+				<textarea name="comment" placeholder="MENSAGEM" required ></textarea>
+	  			<button name="send" type="submit" class="submit">Enviar</button>
+	  		</form>
+	  	</div>
+	</section>
 
 </body>
 </html>
